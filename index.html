@@ -225,7 +225,7 @@
       <h4>Send Me A Messages</h4>
 
       <div class="container2">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://formspree.io/f/mwkjaeyv" method="post">
       
           <label for="fname">Your Name</label>
           <input type="text" id="fname" name="yourname" placeholder="Click Here...">
@@ -299,23 +299,6 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
-    }
-  </script>
-
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail() {
-      Email.send({
-    Host : "smtp.gmail.com",
-    Username : "idigitalpnj@gmail.com",
-    Password : "gwganteng2003",
-    To : 'idigitalpnj@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Messages",
-    Body : "And this is the body"
-}).then(
-  message => alert('Submit Success !!')
-);
     }
   </script>
 </body>
